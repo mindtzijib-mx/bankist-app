@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+# Bankist App (React Migration)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a migration of the original Bankist JavaScript app (HTML/CSS/JS) to a modern React application. The goal is to demonstrate how to refactor a vanilla JS project into a component-based, state-driven React app, preserving all original features and UI/UX.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- User login with demo accounts
+- View account balance, transaction history, and summary (in/out/interests)
+- Transfer money between users
+- Request a loan (with eligibility check)
+- Close account (delete user)
+- Automatic logout timer for security
+- Sorting of transactions
+- Responsive and modern UI (original Bankist design)
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 1. Install dependencies
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```bash
+npm install
+```
 
-### `npm test`
+### 2. Start the development server
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+npm start
+```
 
-### `npm run build`
+The app will be available at [http://localhost:3000](http://localhost:3000) (or the port shown in your terminal).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Demo Credentials
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You can use the following demo users to log in and test all features:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Name              | Username | PIN  |
+| ----------------- | -------- | ---- |
+| Jonas Schmedtmann | js       | 1111 |
+| Jessica Davis     | jd       | 2222 |
 
-### `npm run eject`
+- **Username**: The initials of the user's name (all lowercase).
+- **PIN**: As shown above.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- `src/components/Bankist/` — All React components for the Bankist app
+- `src/components/Bankist/accounts.js` — Demo account data
+- `src/components/Bankist/BankistApp.js` — Main app logic and state
+- `src/components/Bankist/BankistApp.css` — Styles (migrated from original CSS)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Technical Details
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- React functional components and hooks (`useState`, `useEffect`, `useMemo`)
+- State management for accounts, session, timer, and UI feedback
+- All business logic (transfers, loans, close account, timer) migrated from the original JS
+- No backend: all data is in-memory and resets on reload
 
-## Learn More
+## Credits
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Original design and logic by Jonas Schmedtmann (as part of his JavaScript course)
+- React migration and refactor by [Your Name]
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to explore, test, and extend the app!
