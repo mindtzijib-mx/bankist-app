@@ -58,7 +58,7 @@ You can use the following demo users to log in and test all features:
 ## Credits
 
 - Original design and logic by Jonas Schmedtmann (as part of his JavaScript course)
-- React migration and refactor by [Your Name]
+- React migration and refactor by MindTzijib
 
 ---
 
