@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/bankist-app/static/css/main.7c34fd09.css",
+    "main.js": "/bankist-app/static/js/main.cfa4a5fd.js",
+    "static/js/453.35a23c94.chunk.js": "/bankist-app/static/js/453.35a23c94.chunk.js",
+    "index.html": "/bankist-app/index.html",
+    "main.7c34fd09.css.map": "/bankist-app/static/css/main.7c34fd09.css.map",
+    "main.cfa4a5fd.js.map": "/bankist-app/static/js/main.cfa4a5fd.js.map",
+    "453.35a23c94.chunk.js.map": "/bankist-app/static/js/453.35a23c94.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7c34fd09.css",
+    "static/js/main.cfa4a5fd.js"
+  ]
+}
