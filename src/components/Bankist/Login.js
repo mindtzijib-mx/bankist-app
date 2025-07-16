@@ -30,7 +30,7 @@ export default function Login({ setCurrentAccount }) {
   return (
     <>
       <p className="welcome">Log in to get started</p>
-      <img src="/logo.png" alt="Logo" className="logo" />
+      <img src="./logo.png" alt="Logo" className="logo" />
       <form className="login" onSubmit={handleSubmit}>
         <input
           type="text"

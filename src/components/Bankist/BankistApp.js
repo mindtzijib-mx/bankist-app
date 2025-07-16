@@ -172,7 +172,7 @@ export default function BankistApp() {
             <p className="welcome">
               Welcome back, {current.owner.split(" ")[0]}
             </p>
-            <img src="/logo.png" alt="Logo" className="logo" />
+            <img src="./logo.png" alt="Logo" className="logo" />
             <button
               className="login__btn"
               style={{ marginLeft: 16 }}
